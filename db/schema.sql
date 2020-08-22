@@ -15,5 +15,5 @@ CREATE TABLE users_ingredients (
 CREATE TABLE favorite_recipes(
     id INT NOT NULL AUTO_INCREMENT,
     recipe_id INT NOT NULL,
-recipe_name VARCHAR (50),
+    recipe_name VARCHAR (50),
 );
