@@ -12,12 +12,9 @@ $(document).ready(() => {
     },
   };
 
-
-
-
   $.ajax(settings).done(function (response) {
     console.log(response);
-    let recipe = JSON.stringify(response[0].title) + "<br>" + "<img src='" + response[0].image + "'>";
+    let recipe = JSON.stringify(response[0].title) + "<br>" + "<img src='" + response[0].image + "'><br>";
     console.log(recipe);
     $("#recipes").append(recipe);
   });
