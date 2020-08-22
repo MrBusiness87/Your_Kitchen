@@ -6,8 +6,10 @@ USE your_kitchenDB;
 
 CREATE TABLE users_ingredients (
     id INT NOT NULL AUTO_INCREMENT,
+    ingredient_id INT NOT NULL,
     ingredient_name VARCHAR(50),
-    -- quantity VARCHAR OR INT, depends on the API,
+    ingredient_amount INT NOT NULL,
+    ingredient_unit VARCHAR(50),    
 );
 
 CREATE TABLE favorite_recipes(
