@@ -14,5 +14,6 @@ CREATE TABLE users_ingredients (
 
 CREATE TABLE favorite_recipes(
     id INT NOT NULL AUTO_INCREMENT,
-    -- not sure how to handle the recipes being favorited, do we save the name from the API or does the API have a unique identifier for each recipes
+    recipe_id INT NOT NULL,
+recipe_name VARCHAR (50),
 );
