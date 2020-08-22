@@ -4,7 +4,7 @@ const path = require("path");
 // Requiring our custom middleware for checking if a user is logged in
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
-module.exports = function(app) {
+module.exports = function (app) {
   app.get("/", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -25,5 +25,21 @@ module.exports = function(app) {
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../public/members.html"));
+  });
+
+  app.get("/favorites", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/favorites.html"));
+  });
+
+  app.get("/recentlyViewed", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/recentlyViewed.html"));
+  });
+
+  app.get("/recipeView", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/recipeView.html"));
+  });
+
+  app.get("/ingredientsView", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/ingredientsView.html"));
   });
 };
