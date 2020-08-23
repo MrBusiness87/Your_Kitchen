@@ -5,7 +5,7 @@ CREATE DATABASE your_kitchenDB;
 USE your_kitchenDB;
 
 CREATE TABLE users_ingredients (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     ingredient_id INT,
     ingredient_name VARCHAR(50),
     ingredient_amount INT,
