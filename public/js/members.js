@@ -17,7 +17,7 @@ $(document).ready(() => {
 
   $.ajax(settings).done(function (response) {
     console.log(response);
-    let recipe = JSON.stringify(response[0].title) + "<br>" + "<img src='" + response[0].image + "'>";
+    let recipe = "<h3>" + response[0].title + "</h3><br><img src='" + response[0].image + "'><br><h5>You will need: " + response[0].usedIngredients[0].name + "</h5>";
     console.log(recipe);
     $("#recipes").append(recipe);
   });

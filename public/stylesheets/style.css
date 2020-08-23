@@ -2,3 +2,24 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+.row {
+  margin: 2%;
+}
+
+.container {
+  background-color: gray;
+}
+
+#recipes {
+  margin-left: 15%;
+}
+
+.card {
+  width: 200px;
+}
+
+.card-image {
+  height: 120px;
+  width: 120px;
+}
