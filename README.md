@@ -27,13 +27,13 @@
 Your Kitchen is a web-based application taking advantage of several technologies to provide the user with a convenient place to keep track of their cooking ingredients, and be suggested recipes based on those ingredients. After creating an account, users are able to add all the ingredients they have in their kitchen to our database. Through the use of Spoonacular's API, the ingredients stored within our database are then used to generate a list of possible recipes the user can create. After following one of the recipes, the users ingredient list is updated live, so that when they revisit the site in the future, they won't be suggested recipes they can no longer make.
 
 Currently the technologies utilized are as follows:
-    - bycrypt.js: hashing passwords
-    - express: used to create a functioning online web-based application
-    - express-session: used to encrypt coookies and verify users each session
-    - mysql2: allows JavaScript to communicate with MySQL
-    - passport: authenticate users based on a chosen strategy 
-    - passport-local: the chosen authentication style for this application 
-    - sequelize: allows the app to communicate with MYSQL database
+* bycrypt.js: hashing passwords
+* express: used to create a functioning online web-based application
+* express-session: used to encrypt coookies and verify users each session
+* mysql2: allows JavaScript to communicate with MySQL
+* passport: authenticate users based on a chosen strategy 
+* passport-local: the chosen authentication style for this application 
+* sequelize: allows the app to communicate with MYSQL database
     
 ### <a name="Screenshots"></a>Screenshots
 
