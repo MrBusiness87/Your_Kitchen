@@ -14,6 +14,14 @@ module.exports = function(app) {
     });
   });
 
+  // Route to return to members.html
+  app.post("/api/members", passport.authenticate("local"), (req, res) => {
+    res.json({
+      email: req.user.email,
+      id: req.user.id,
+    });
+  });
+
   // Route for favorites
   app.post("/api/favorites", passport.authenticate("local"), (req, res) => {
     res.json({
