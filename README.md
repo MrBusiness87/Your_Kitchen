@@ -29,7 +29,7 @@ Your Kitchen is a web-based application taking advantage of several technologies
 Currently the technologies utilized are as follows:
 * bycrypt.js: hashing passwords
 * express: used to create a functioning online web-based application
-* express-session: used to encrypt coookies and verify users each session
+* express-session: used to encrypt cookies and verify users each session
 * mysql2: allows JavaScript to communicate with MySQL
 * passport: authenticate users based on a chosen strategy 
 * passport-local: the chosen authentication style for this application 
@@ -45,7 +45,7 @@ This project is deployed [here](insert heroku link)
 
 ### <a name="Usage"></a>Usage
 
-This application is used to create a more streamlined and convenient experience in the kitche by presenting all of the users ingredients in a convenient place. Besides that, Spoonacular's API means that the user no longer needs to search for recipes and make a trip to the grocery store to get whatever ingredients they're missing; they are only shown recipes they can make in the moment.
+This application is used to create a more streamlined and convenient experience in the kitchen by presenting all of the users ingredients in a convenient place. Besides that, Spoonacular's API means that the user no longer needs to search for recipes and make a trip to the grocery store to get whatever ingredients they're missing; they are only shown recipes they can make in the moment.
 
 ### <a name="License"></a>License
 
