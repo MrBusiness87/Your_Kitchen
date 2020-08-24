@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Recipes</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link href="stylesheets/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/logout">
-            Logout
-          </a>
-        </div>
-      </div>
-    </nav>
 
-    <div class="row">
-      <div class="col s12 offset-s2">
-        <div class="row">
-          <div class="col s2" id="recipeImg">
-            <!-- recipe image here 
+<head>
+  <title>Recipes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="view"></div>
+  <div class="row">
+    <div class="col s12 offset-s2">
+      <div class="row">
+        <div class="col s2" id="recipeImg">
+          <!-- recipe image here 
             erase lorem when added-->
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              doloremque nisi et perspiciatis, ipsam nam rerum alias totam hic
-              numquam? Tempora dicta sapiente in quod, quo excepturi amet
-              laudantium at.
-            </p>
-          </div>
-          <div class="col s6" id="ingredients">
-            <!-- ingredients here 
-            erase lorem when added-->
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              doloremque nisi et perspiciatis, ipsam nam rerum alias totam hic
-              numquam? Tempora dicta sapiente in quod, quo excepturi amet
-              laudantium at.
-            </p>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            doloremque nisi et perspiciatis, ipsam nam rerum alias totam hic
+            numquam? Tempora dicta sapiente in quod, quo excepturi amet
+            laudantium at.
+          </p>
+        </div>
+        <div class="col s6" id="title">
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col s12 offset-s2">
-        <div class="row">
-          <div class="col s2"></div>
-          <div class="col s6" id="ingredientsNeeded">
-            <!-- ingredients needed here 
-            erase lorem when added-->
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              doloremque nisi et perspiciatis, ipsam nam rerum alias totam hic
-              numquam? Tempora dicta sapiente in quod, quo excepturi amet
-              laudantium at.
-            </p>
-          </div>
+  <div class="row">
+    <div class="col s12 offset-s2">
+      <div class="row">
+        <div class="col s2"></div>
+        <div class="col s6" id="summary">
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="center-align">
-      <button class="btn btn-danger btn-lg" id="update">
-        <span></span>Update Your Ingredients
-        <i class="material-icons right">update</i>
-      </button>
-      <button class="btn btn-danger btn-lg" id="favorite">
-        <span></span>Save to Favorites
-        <i class="material-icons right">favorite</i>
-      </button>
-    </div>
+  <div class="center-align">
+    <button class="btn btn-danger btn-lg" id="update">
+      <span></span>Update Your Ingredients
+      <i class="material-icons right">update</i>
+    </button>
+    <button class="btn btn-danger btn-lg" id="favorite">
+      <span></span>Save to Favorites
+      <i class="material-icons right">favorite</i>
+    </button>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/recipeView.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/recipeView.js"></script>
+</body>
+
 </html>
