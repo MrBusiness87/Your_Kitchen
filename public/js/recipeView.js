@@ -11,10 +11,13 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-  let title = "<p>" + response.title + "</p>";
+  const number = "<p>RECIPE #: " + response.id + "</p>";
+  console.log(number);
+  $("#number").append(number);
+  const title = "<p>" + response.title + "</p>";
   console.log(title);
   $("#title").append(title);
-  let summary = "<p>" + response.summary + "</p>";
+  const summary = "<p>" + response.summary + "</p>";
   console.log(summary);
   $("#summary").append(summary);
 });
