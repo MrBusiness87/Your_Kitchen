@@ -17,9 +17,17 @@ $(document).ready(() => {
 
   $.ajax(settings).done(function (response) {
     console.log(response);
-    let recipe = "<h3>" + response[0].title + "</h3><br><img src='" + response[0].image + "'><br><h5>You will need: " + response[0].usedIngredients[0].name + "</h5>";
+
+    const title = response[0].title;
+    const image = response[0].image;
+    const ingredients = response[0].usedIngredients[0].name;
+
+    var recipe = "<h3>" + title + "</h3><br><img src='" + image + "'><br><h5>You will need: " + ingredients + "</h5>";
     console.log(recipe);
     $("#recipes").append(recipe);
+    var imageView = "<img src='" + imageView + "'>";
+    console.log(imageView);
+    $("#image").append(imageView);
   });
 
   // $.get("/api/user_data").then(data => {

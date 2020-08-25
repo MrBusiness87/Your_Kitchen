@@ -24,10 +24,11 @@ form.login {
   width: 120px;
 }
 
-#title p {
-  font-size: 40px;
+#title p,
+#number p {
+  font-size: 30px;
 }
 
 #summary p {
-  font-size: 20px;
+  font-size: 18px;
 }
