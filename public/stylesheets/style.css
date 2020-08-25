@@ -2,3 +2,10 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  float: left;
+  margin-right: 25px;
+}
