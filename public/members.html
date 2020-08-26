@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Passport Authentication</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="stylesheets/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Passport Authentication</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <link href="stylesheets/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo right">My Kitchen</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col m6">
-        <h2>Welcome #USER#<span class="member-name"></span></h2>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">My Kitchen</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
       </div>
-      <a class="dropdown-trigger btn" href="#" data-target="dropdown1">Meats</a>
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!" value="chicken">Chicken</a></li>
-        <li><a href="#!" value="beef">Beef</a></li>
-        <li><a href="#!" value="pork">Pork</a></li>
-      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col m6">
+          <h2>Welcome #USER#<span class="member-name"></span></h2>
+        </div>
+        <a class="dropdown-trigger btn" href="#" data-target="dropdown1"
+          >Meats</a
+        >
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!" value="chicken">Chicken</a></li>
+          <li><a href="#!" value="beef">Beef</a></li>
+          <li><a href="#!" value="pork">Pork</a></li>
+        </ul>
 
-      <a class="dropdown-trigger btn" href="#" data-target="dropdown1">M</a>
-      <ul id="dropdown2" class="dropdown-content">
-        <li><a href="#!">C</a></li>
-        <li><a href="#!">B</a></li>
-        <li><a href="#!">P</a></li>
-      </ul>
+        <a class="dropdown-trigger btn" href="#" data-target="dropdown2">M</a>
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a href="#!">Rice</a></li>
+          <!-- <li><a href="#!">B</a></li>
+        <li><a href="#!">P</a></li> -->
+        </ul>
+      </div>
+      <br />
     </div>
-    <br />
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col s3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../assets/placeholder960x960.png" />
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>
-              I am a very simple card. I am good at containing small bits of
-              information. I am convenient because I require little markup to
-              use effectively.
-            </p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
+    <div class="container">
+      <div class="row">
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="../assets/placeholder960x960.png" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
+        <div id="recipes"></div>
       </div>
-      <div id="recipes"></div>
     </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/members.js"></script>
+  </body>
 </html>
