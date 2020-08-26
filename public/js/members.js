@@ -1,10 +1,13 @@
 $(document).ready(() => {
+  $(".modal").modal();
+  $(".dropdown-trigger").dropdown();
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   var settings = {
     async: true,
     crossDomain: true,
-    url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=5&ranking=1&ignorePantry=false&ingredients=apples%252Cflour%252Csugar",
+    url:
+      "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=5&ranking=1&ignorePantry=false&ingredients=apples%252Cflour%252Csugar",
     method: "GET",
     headers: {
       "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
@@ -12,12 +15,14 @@ $(document).ready(() => {
     },
   };
 
-
-
-
-  $.ajax(settings).done(function (response) {
+  $.ajax(settings).done(function(response) {
     console.log(response);
-    let recipe = JSON.stringify(response[0].title) + "<br>" + "<img src='" + response[0].image + "'>";
+    let recipe =
+      JSON.stringify(response[0].title) +
+      "<br>" +
+      "<img src='" +
+      response[0].image +
+      "'>";
     console.log(recipe);
     $("#recipes").append(recipe);
   });

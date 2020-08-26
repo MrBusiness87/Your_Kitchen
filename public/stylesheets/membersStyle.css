@@ -1,0 +1,9 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+}
