@@ -1,6 +1,4 @@
 $(document).ready(() => {
-  $(".modal").modal();
-  $(".dropdown-trigger").dropdown();
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   // var settings = {
@@ -14,7 +12,6 @@ $(document).ready(() => {
   //     "x-rapidapi-key": "0ada17a314mshe0574db4c12a595p187297jsn28f33c886f1b",
   //   },
   // };
-
   // $.ajax(settings).done(function(response) {
   //   console.log(response);
   //   let recipe =
@@ -26,7 +23,6 @@ $(document).ready(() => {
   //   console.log(recipe);
   //   $("#recipes").append(recipe);
   // });
-
   // $.get("/api/user_data").then(data => {
   //   $(".member-name").text(data.email);
   // });
