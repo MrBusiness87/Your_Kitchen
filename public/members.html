@@ -7,11 +7,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link href="stylesheets/membersStyle.css" rel="stylesheet" />
     <title>Your Kitchen</title>
   </head>
   <body>
-    <ul id="dropdown1" class="dropdown-content">
+    <ul id="dropdown" class="dropdown-content" data-target="dropdown">
       <li><a href="/ingredientsViewed">Your Ingredients</a></li>
       <li class="divide"></li>
       <li><a href="/recentlyViewed">Recently Viewed</a></li>
@@ -25,7 +29,7 @@
           <li><a href=""></a></li>
           <li><a href="/logout">Logout</a></li>
           <li>
-            <a class="dropdown-trigger" data-target="dropdown"
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
               >Get Started<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
