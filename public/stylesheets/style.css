@@ -7,10 +7,6 @@ form.login {
   margin: 2%;
 }
 
-.container {
-  background-color: gray;
-}
-
 #recipes {
   margin-left: 15%;
 }
@@ -32,4 +28,6 @@ form.login {
 
 #summary p {
   font-size: 18px;
+
 }
+
