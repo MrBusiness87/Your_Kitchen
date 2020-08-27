@@ -19,7 +19,7 @@
       <div class="nav-wrapper">
         <a href="/members" class="brand-logo">Your Kitchen</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="/ingredientsViewed">Your Ingredients</a></li>
+          <li><a href="/myIngredients">Your Ingredients</a></li>
           <li><a href="/recipeView">Recipes</a></li>
           <li><a href="/recentlyViewed">Recently Viewed</a></li>
           <li><a href="/favorites">Favorites</a></li>
@@ -32,7 +32,16 @@
       <form class="col s12">
         <div class="row">
           <div class="input-field col s6 offset-s3">
-            <input placeholder="Search Ingredients" id="search" type="text" />
+            <input placeholder="Add Ingredients" id="search" type="text" />
+            <button
+              class="btn waves-effect waves-light"
+              id="addButton"
+              type="submit"
+              name="action"
+            >
+              Add Ingredient
+              <i class="material-icons right">add</i>
+            </button>
             <button
               class="btn waves-effect waves-light"
               id="searchButton"
@@ -50,16 +59,7 @@
     <div class="row">
       <div class="col s12">
         <div class="row">
-          <div class="col s6 offset-s3" id="ingredients">
-            <!-- DOM updates ingredients and quantity here -->
-            <!-- Erase <p>Lorem</p> when ingredients js is added -->
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              minima impedit ex deleniti porro. Dicta omnis asperiores aliquam
-              nulla minus nisi distinctio provident blanditiis nesciunt.
-              Voluptates eos laboriosam nobis debitis.
-            </p>
-          </div>
+          <div class="col s6 offset-s3" id="ingredients"></div>
         </div>
       </div>
     </div>
