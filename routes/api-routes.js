@@ -51,16 +51,12 @@ module.exports = function(app) {
   });
 
   // Route for ingredients view
-  app.post(
-    "/api/ingredientsView",
-    passport.authenticate("local"),
-    (req, res) => {
-      res.json({
-        email: req.user.email,
-        id: req.user.id,
-      });
-    }
-  );
+  app.post("/api/myIngredients", passport.authenticate("local"), (req, res) => {
+    res.json({
+      email: req.user.email,
+      id: req.user.id,
+    });
+  });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
@@ -98,4 +94,28 @@ module.exports = function(app) {
       });
     }
   });
+
+  // routes for ingredient api for myIngredients page
+  app.post("/api/ingredient", (req, res) => {
+    db.Ingredients.create({
+      ingredient: req.body.ingredient,
+    }).then((dbingredients) => {
+      res.json(dbingredients);
+    });
+  });
+
+  app.delete("/api/ingredient", (req, res) => {
+    db.Ingredients.destroy({
+      truncate: true,
+    }).then((dbIngredients) => {
+      res.json(dbIngredients);
+    });
+  });
+
+  app.get("/api/ingredient", (req, res) => {
+    db.Ingredients.findAll({}).then((dbIngredients) => {
+      res.json(dbIngredients);
+    });
+  });
 };
+// ----------------------------------------------------------
