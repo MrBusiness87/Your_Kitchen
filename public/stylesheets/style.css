@@ -2,10 +2,7 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
-.card {
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  float: left;
-  margin-right: 25px;
+.container {
+  text-align: center;
+  background-color: #ee6e73;
 }
