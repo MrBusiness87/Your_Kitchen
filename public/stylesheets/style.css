@@ -6,3 +6,7 @@ form.login {
   text-align: center;
   background-color: #ee6e73;
 }
+#buttons {
+  margin-top: 200px;
+  padding-bottom: 20px;
+}
