@@ -117,5 +117,33 @@ module.exports = function(app) {
       res.json(dbIngredients);
     });
   });
+
+  // ----------------------------------------------------------
+  // routes to store user data for recipes
+  app.post("/api/userRecipes", (req, res) => {
+    db.userRecipes
+      .create({
+        userID: req.body.userID,
+        title: req.body.title,
+        image: req.body.image,
+        recipeID: req.body.recipeID,
+      })
+      .then((dbuserRecipes) => {
+        res.json(dbuserRecipes);
+      });
+  });
+
+  app.get("/api/userRecipes:id", (req, res) => {
+    db.userRecipes
+      .findAll({
+        where: {
+          userID: req.params.id,
+        },
+      })
+      .then((dbuserRecipes) => {
+        res.json(dbuserRecipes);
+      });
+  });
+
+  // ----------------------------------------------------------
 };
-// ----------------------------------------------------------
