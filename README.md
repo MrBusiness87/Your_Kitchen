@@ -41,7 +41,7 @@ WIP
 
 ### <a name="URL"></a>URL
 
-This project is deployed [here](insert heroku link)
+This project is deployed [here](https://your-kitchen.herokuapp.com/)
 
 ### <a name="Usage"></a>Usage
 
