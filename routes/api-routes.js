@@ -2,7 +2,7 @@
 const db = require("../models");
 const passport = require("../config/passport");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -10,7 +10,7 @@ module.exports = function(app) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -18,7 +18,7 @@ module.exports = function(app) {
   app.post("/api/members", passport.authenticate("local"), (req, res) => {
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -26,7 +26,7 @@ module.exports = function(app) {
   app.post("/api/favorites", passport.authenticate("local"), (req, res) => {
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -37,7 +37,7 @@ module.exports = function(app) {
     (req, res) => {
       res.json({
         email: req.user.email,
-        id: req.user.id,
+        id: req.user.id
       });
     }
   );
@@ -46,7 +46,7 @@ module.exports = function(app) {
   app.post("/api/recipeView", passport.authenticate("local"), (req, res) => {
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -54,7 +54,7 @@ module.exports = function(app) {
   app.post("/api/myIngredients", passport.authenticate("local"), (req, res) => {
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -63,9 +63,9 @@ module.exports = function(app) {
   // otherwise send back an error
   app.post("/api/signup", (req, res) => {
     db.User.create({
-      email: req.body.email,
-      password: req.body.password,
-    })
+        email: req.body.email,
+        password: req.body.password
+      })
       .then(() => {
         res.redirect(307, "/api/login");
       })
@@ -90,7 +90,7 @@ module.exports = function(app) {
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         email: req.user.email,
-        id: req.user.id,
+        id: req.user.id
       });
     }
   });
@@ -99,7 +99,7 @@ module.exports = function(app) {
   app.post("/api/ingredient", (req, res) => {
     db.Ingredients.create({
       ingredient: req.body.ingredient,
-      userID: req.body.userID,
+      userID: req.body.userID
     }).then((dbingredients) => {
       res.json(dbingredients);
     });
@@ -108,7 +108,7 @@ module.exports = function(app) {
   app.delete("/api/ingredient:id", (req, res) => {
     db.Ingredients.destroy({
       where: {
-        userID: req.params.id,
+        userID: req.params.id
       },
     }).then((dbIngredients) => {
       res.json(dbIngredients);
@@ -118,7 +118,7 @@ module.exports = function(app) {
   app.get("/api/ingredient:id", (req, res) => {
     db.Ingredients.findAll({
       where: {
-        userID: req.params.id,
+        userID: req.params.id
       },
     }).then((dbIngredients) => {
       res.json(dbIngredients);
@@ -133,7 +133,7 @@ module.exports = function(app) {
         userID: req.body.userID,
         title: req.body.title,
         image: req.body.image,
-        recipeID: req.body.recipeID,
+        recipeID: req.body.recipeID
       })
       .then((dbuserRecipes) => {
         res.json(dbuserRecipes);
