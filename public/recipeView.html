@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Recipes</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link href="stylesheets/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="/members" class="brand-logo">Your Kitchen</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/myIngredients">Your Ingredients</a></li>
-          <li><a href="/recipeView">Recipes</a></li>
-          <li><a href="/recentlyViewed">Recently Viewed</a></li>
-          <li><a href="/favorites">Favorites</a></li>
-          <li><a href="/logout">Logout</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div id="message"></div>
-    <div class="row">
-      <div class="col s12">
-        <div class="row">
-          <div class="col s3" id="recipeImg"></div>
-          <div class="col s9" id="title"></div>
-        </div>
+<head>
+  <title>Recipes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper black">
+      <a href="/members" class="brand-logo center">YOUR KITCHEN</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/myIngredients">Your Ingredients</a></li>
+        <li><a href="/recipeView">Recipes</a></li>
+        <li><a href="/recentlyViewed">Recently Viewed</a></li>
+        <li><a href="/favorites">Favorites</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="message"></div>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="col s3" id="recipeImg"></div>
+        <div class="col s9" id="title"></div>
       </div>
     </div>
+  </div>
 
-    <div class="center-align" id="updateSaveButton">
-      <button class="btn btn-danger btn-lg" id="update">
-        <span></span>Update Your Ingredients
-        <i class="material-icons right">update</i>
-      </button>
-      <button class="btn btn-danger btn-lg" id="favorite">
-        <span></span>Save to Favorites
-        <i class="material-icons right">favorite</i>
-      </button>
-    </div>
+  <div class="center-align" id="updateSaveButton">
+    <button class="btn btn-danger btn-lg" id="update">
+      <span></span>Update Your Ingredients
+      <i class="material-icons right">update</i>
+    </button>
+    <button class="btn btn-danger btn-lg" id="favorite">
+      <span></span>Save to Favorites
+      <i class="material-icons right">favorite</i>
+    </button>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/recipeView.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/recipeView.js"></script>
+</body>
+
 </html>

@@ -1,79 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ingredients</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link href="stylesheets/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="/members" class="brand-logo">Your Kitchen</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/myIngredients">Your Ingredients</a></li>
-          <li><a href="/recipeView">Recipes</a></li>
-          <li><a href="/recentlyViewed">Recently Viewed</a></li>
-          <li><a href="/favorites">Favorites</a></li>
-          <li><a href="/logout">Logout</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6 offset-s3">
-            <input placeholder="Add Ingredients" id="search" type="text" />
-            <button
-              class="btn waves-effect waves-light"
-              id="addButton"
-              type="submit"
-              name="action"
-            >
-              Add Ingredient
-              <i class="material-icons right">add</i>
-            </button>
-            <button
-              class="btn waves-effect waves-light"
-              id="searchButton"
-              type="submit"
-              name="action"
-            >
-              Search
-              <i class="material-icons right">search</i>
-            </button>
-            <button
-              class="btn waves-effect waves-light"
-              id="deleteButton"
-              type="submit"
-              name="action"
-            >
-              Clear Your Fridge
-              <i class="material-icons right">delete</i>
-            </button>
-          </div>
-        </div>
-      </form>
+<head>
+  <title>Ingredients</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper black">
+      <a href="/members" class="brand-logo center">YOUR KITCHEN</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/myIngredients">Your Ingredients</a></li>
+        <li><a href="/recipeView">Recipes</a></li>
+        <li><a href="/recentlyViewed">Recently Viewed</a></li>
+        <li><a href="/favorites">Favorites</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="row">
-      <div class="col s12">
-        <div class="row">
-          <div class="col s6 offset-s3" id="ingredients"></div>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6 offset-s3">
+          <input placeholder="Add Ingredients" id="search" type="text" />
+          <button class="btn waves-effect waves-light blue darken-4" id="addButton" type="submit" name="action">
+            Add Ingredient
+            <i class="material-icons right">add</i>
+          </button>
+          <button class="btn waves-effect waves-light blue darken-4" id="searchButton" type="submit" name="action">
+            Search
+            <i class="material-icons right">search</i>
+          </button>
+          <button class="btn waves-effect waves-light blue darken-4" id="deleteButton" type="submit" name="action">
+            Clear Your Fridge
+            <i class="material-icons right">delete</i>
+          </button>
         </div>
       </div>
-    </div>
+    </form>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/myIngredients.js"></script>
-  </body>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="col s6 offset-s3" id="ingredients"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/myIngredients.js"></script>
+</body>
+
 </html>
